@@ -1,6 +1,7 @@
 package com.nowcoder.community.controller;
 
 import com.nowcoder.community.entity.DiscussPost;
+import com.nowcoder.community.entity.Page;
 import com.nowcoder.community.entity.User;
 import com.nowcoder.community.service.DiscussPostService;
 import com.nowcoder.community.service.UserService;
@@ -26,8 +27,11 @@ public class homeController {
     private UserService userService;
 
     @RequestMapping(path = "/index", method = RequestMethod.GET)
-    public String getIndexPage(Model model){
-        List<DiscussPost> list =  discussPostService.findDiscussPosts(0, 0, 10);
+    public String getIndexPage(Model model, Page page){
+        page.setRows(discussPostService.findDiscussPostsRows(0));
+        page.setPath("/index");
+
+        List<DiscussPost> list =  discussPostService.findDiscussPosts(0, page.getOffSet(), page.getLimit());
         List<Map<String, Object>> discussPosts = new ArrayList<>();
         if(list != null){
             for(DiscussPost post: list){
