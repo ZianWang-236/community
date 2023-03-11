@@ -1,0 +1,199 @@
+2023-03-10 18:06:09,893 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 9224 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 18:06:09,897 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 18:06:09,985 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-10 18:06:09,985 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-10 18:06:11,904 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
+2023-03-10 18:06:11,920 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
+2023-03-10 18:06:11,922 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-03-10 18:06:11,923 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-10 18:06:12,000 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-03-10 18:06:12,002 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2013 ms
+2023-03-10 18:06:12,712 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 18:06:13,079 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-03-10 18:06:13,139 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
+2023-03-10 18:06:13,188 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
+2023-03-10 18:06:13,231 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 4.187 seconds (process running for 4.946)
+2023-03-10 18:06:15,903 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-10 18:06:15,904 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-03-10 18:06:15,906 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-03-10 18:06:15,997 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-03-10 18:06:16,211 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52e2c64f
+2023-03-10 18:06:16,213 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-03-10 18:33:08,637 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
+2023-03-10 18:33:08,644 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
+2023-03-10 21:26:24,024 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 11220 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:26:24,028 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:26:26,280 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:26:26,597 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.279 seconds (process running for 4.75)
+2023-03-10 21:27:37,859 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 13092 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:27:37,871 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:27:39,823 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:27:40,100 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.861 seconds (process running for 3.962)
+2023-03-10 21:27:58,996 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 8016 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:27:59,001 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:28:01,222 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:28:01,553 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.214 seconds (process running for 4.943)
+2023-03-10 21:29:07,341 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 14760 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:29:07,345 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:29:09,259 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:29:09,544 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.768 seconds (process running for 3.843)
+2023-03-10 21:30:15,314 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 2008 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:30:15,319 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:30:17,237 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:30:17,502 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.792 seconds (process running for 3.836)
+2023-03-10 21:30:53,241 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 15596 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:30:53,244 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:30:55,205 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:30:55,518 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.83 seconds (process running for 3.863)
+2023-03-10 21:35:38,556 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 17276 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:35:38,559 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:35:40,557 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:35:40,828 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.812 seconds (process running for 4.865)
+2023-03-10 21:40:51,929 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 16760 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:40:51,932 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:40:53,928 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:40:54,204 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.916 seconds (process running for 4.074)
+2023-03-10 21:43:14,544 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 9168 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:43:14,550 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:43:16,492 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:43:16,761 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.862 seconds (process running for 3.938)
+2023-03-10 21:45:55,225 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 18208 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:45:55,228 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:45:57,228 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:45:57,508 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.886 seconds (process running for 3.98)
+2023-03-10 21:47:05,142 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 15152 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:47:05,145 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:47:07,105 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:47:07,384 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.858 seconds (process running for 3.919)
+2023-03-10 21:48:22,955 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 3772 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:48:22,958 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:48:24,976 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:48:25,267 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.922 seconds (process running for 3.979)
+2023-03-10 21:49:06,513 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 14044 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:49:06,516 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:49:08,664 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:49:08,979 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.11 seconds (process running for 4.374)
+2023-03-10 21:49:23,129 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 17228 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:49:23,133 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:49:25,020 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:49:25,295 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.763 seconds (process running for 3.789)
+2023-03-10 21:50:27,028 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 14624 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:50:27,031 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:50:29,249 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:50:29,549 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.158 seconds (process running for 4.243)
+2023-03-10 21:52:40,773 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 18272 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:52:40,777 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:52:43,317 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:52:43,607 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.592 seconds (process running for 4.847)
+2023-03-10 21:56:26,315 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 14672 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:56:26,318 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:56:28,380 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:56:28,658 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.069 seconds (process running for 4.345)
+2023-03-10 21:58:56,618 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 17196 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 21:58:56,621 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 21:58:58,571 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 21:58:58,856 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.896 seconds (process running for 4.017)
+2023-03-10 22:01:19,374 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 1680 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:01:19,378 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:01:21,342 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:01:21,634 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.909 seconds (process running for 4.012)
+2023-03-10 22:01:59,694 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 14616 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:01:59,697 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:02:01,715 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:02:02,072 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.044 seconds (process running for 4.123)
+2023-03-10 22:02:27,660 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 5372 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:02:27,664 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:02:29,831 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:02:30,116 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.093 seconds (process running for 4.148)
+2023-03-10 22:04:12,744 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 11892 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:04:12,748 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:04:15,089 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:04:15,432 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.319 seconds (process running for 4.367)
+2023-03-10 22:05:56,811 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 16624 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:05:56,815 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:05:58,706 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:05:58,975 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.776 seconds (process running for 3.821)
+2023-03-10 22:06:07,964 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 16612 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:06:07,968 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:06:09,916 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:06:10,190 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.845 seconds (process running for 3.879)
+2023-03-10 22:08:06,550 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 15752 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:08:06,553 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:08:08,454 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:08:08,747 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.8 seconds (process running for 3.892)
+2023-03-10 22:10:23,658 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 11216 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:10:23,661 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:10:25,633 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:10:25,961 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.935 seconds (process running for 4.007)
+2023-03-10 22:12:05,603 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 6720 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:12:05,607 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:12:07,632 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:12:07,937 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.951 seconds (process running for 4.014)
+2023-03-10 22:12:21,256 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 2644 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:12:21,259 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:12:23,353 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:12:23,673 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.014 seconds (process running for 4.053)
+2023-03-10 22:12:32,002 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 5808 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:12:32,005 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:12:34,018 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:12:34,296 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.981 seconds (process running for 4.157)
+2023-03-10 22:13:16,119 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 14940 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:13:16,123 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:13:18,285 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:13:18,580 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.224 seconds (process running for 4.429)
+2023-03-10 22:13:24,286 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 16704 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:13:24,290 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:13:26,686 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:13:27,001 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.383 seconds (process running for 4.846)
+2023-03-10 22:15:06,219 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 17060 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:15:06,222 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:15:08,293 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:15:08,586 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.059 seconds (process running for 4.27)
+2023-03-10 22:15:14,268 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 10600 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:15:14,271 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:15:16,224 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:15:16,515 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.867 seconds (process running for 3.961)
+2023-03-10 22:17:57,245 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 17368 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:17:57,249 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:17:59,275 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:17:59,593 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.025 seconds (process running for 4.244)
+2023-03-10 22:18:30,711 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 14712 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:18:30,715 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:18:32,719 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:18:32,988 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.902 seconds (process running for 3.994)
+2023-03-10 22:18:49,286 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 11352 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:18:49,289 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:18:51,313 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:18:51,596 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.912 seconds (process running for 3.955)
+2023-03-10 22:19:10,373 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 17236 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:19:10,378 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:19:12,396 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:19:12,670 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.904 seconds (process running for 3.962)
+2023-03-10 22:19:21,360 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 3956 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:19:21,363 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:19:23,405 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:19:23,690 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 2.91 seconds (process running for 4.025)
+2023-03-10 22:21:05,788 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:51] Starting MainTests using Java 19.0.2 with PID 2556 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:21:05,793 INFO [main] c.n.c.MainTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:21:07,857 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:21:08,162 INFO [main] c.n.c.MainTests [StartupInfoLogger.java:57] Started MainTests in 3.052 seconds (process running for 4.208)
+2023-03-10 22:22:46,228 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 19.0.2 with PID 13084 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:22:46,232 INFO [main] c.n.c.MailTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:22:48,298 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:22:48,604 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 3.099 seconds (process running for 4.498)
+2023-03-10 22:24:14,831 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 19.0.2 with PID 17220 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:24:14,834 INFO [main] c.n.c.MailTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:24:16,689 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:24:16,972 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.757 seconds (process running for 3.819)
+2023-03-10 22:24:39,796 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 19.0.2 with PID 11572 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:24:39,800 INFO [main] c.n.c.MailTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:24:41,807 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:24:42,164 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.993 seconds (process running for 4.069)
+2023-03-10 22:25:23,798 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 19.0.2 with PID 4572 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:25:23,803 INFO [main] c.n.c.MailTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:25:25,686 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:25:25,965 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.819 seconds (process running for 3.824)
+2023-03-10 22:35:35,688 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 19.0.2 with PID 3088 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:35:35,691 INFO [main] c.n.c.MailTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:35:37,671 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:35:37,969 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.924 seconds (process running for 3.975)
