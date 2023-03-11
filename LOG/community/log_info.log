@@ -193,3 +193,7 @@
 2023-03-10 22:25:23,803 INFO [main] c.n.c.MailTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
 2023-03-10 22:25:25,686 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
 2023-03-10 22:25:25,965 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.819 seconds (process running for 3.824)
+2023-03-10 22:35:35,688 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:51] Starting MailTests using Java 19.0.2 with PID 3088 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-10 22:35:35,691 INFO [main] c.n.c.MailTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-10 22:35:37,671 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-10 22:35:37,969 INFO [main] c.n.c.MailTests [StartupInfoLogger.java:57] Started MailTests in 2.924 seconds (process running for 3.975)
