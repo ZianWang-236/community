@@ -87,7 +87,7 @@ public class UserController {
     public void getHeader(@PathVariable("fileName") String fileName, HttpServletResponse response){
         //服务器存放路径
         fileName = uploadPath + "/" + fileName;
-        System.out.println(fileName);
+//        System.out.println(fileName);
         // 文件后缀
         String suffix = fileName.substring(fileName.lastIndexOf("."));
         // 响应图片
