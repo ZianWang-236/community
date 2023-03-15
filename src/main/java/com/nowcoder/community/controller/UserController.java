@@ -24,6 +24,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Objects;
 
 @Controller
 @RequestMapping("/user")
@@ -45,6 +46,9 @@ public class UserController {
 
     @Autowired
     private HostHolder hostHolder;
+
+    @Autowired
+//    private CommunityUtil communityUtil;
 
     @LoginRequired
     @RequestMapping(path = "/setting", method = RequestMethod.GET)
@@ -83,6 +87,42 @@ public class UserController {
         userService.updateHeader(user.getId(), headerUrl);
         return "redirect:/index";
     }
+
+//    @LoginRequired
+    @RequestMapping(path = "/updatePassword", method = RequestMethod.POST)
+    public String updatePassword(String oldPassword, String newPassword1, String newPassword2, Model model){
+        if(oldPassword==null){
+            model.addAttribute("oldError", "请输入旧密码");
+            return "/site/setting";
+        }
+        if(newPassword1==null || newPassword2==null){
+            model.addAttribute("oldError", "请输入新密码");
+            return "/site/setting";
+        }
+        User user = hostHolder.getUser();
+        // 旧密码是否和数据库中的相符(md5加密后)
+        oldPassword = CommunityUtil.md5(oldPassword + user.getSalt());
+        if(!Objects.equals(user.getPassword(), oldPassword)){
+            model.addAttribute("oldError", "旧密码输入错误");
+            return "/site/setting";
+        }
+        // 两次输入是否相同
+        if(!Objects.equals(newPassword1, newPassword2)){
+            model.addAttribute("newError", "新密码两次输入不相同");
+            return "/site/setting";
+        }
+        // 新密码不能等于旧密码
+        if(Objects.equals(user.getPassword(), CommunityUtil.md5(newPassword1 + user.getSalt())) || Objects.equals(user.getPassword(), CommunityUtil.md5(newPassword2 + user.getSalt()))){
+            model.addAttribute("newError", "新密码不能和旧密码相同");
+            return "/site/setting";
+        }
+        // 都符合条件，可以更新（md5加密后）
+        userService.updatePassword(user.getId(), CommunityUtil.md5(newPassword1 + user.getSalt()));
+        return "redirect:/index";
+
+    }
+
+
     @RequestMapping(path = "/header/{fileName}", method = RequestMethod.GET)
     public void getHeader(@PathVariable("fileName") String fileName, HttpServletResponse response){
         //服务器存放路径

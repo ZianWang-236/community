@@ -123,4 +123,11 @@ public class MapperTests {
 
     }
 
+    @Test
+    public void testUpdatePassword(){
+        System.out.println(userMapper.selectById(150).getPassword());
+        userMapper.updatePassword(150, "xxxxxx");
+        System.out.println(userMapper.selectById(150).getPassword());
+    }
+
 }

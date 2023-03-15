@@ -173,4 +173,8 @@ public class UserService implements CommunityConstant {
     public int updateHeader(int userId, String headerUrl){
         return userMapper.updateHeader(userId,headerUrl);
     }
+
+    public int updatePassword(int userId, String newPassword){
+        return userMapper.updatePassword(userId, newPassword);
+    }
 }
