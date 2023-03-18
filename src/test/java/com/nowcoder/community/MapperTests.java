@@ -16,6 +16,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -155,6 +156,25 @@ public class MapperTests {
 
         count = messageMapper.selectLetterUnreadCount(131, "111_131");
         System.out.println(count);
+    }
+
+    @Test
+    public void testInsertMessage(){
+        Message msg = new Message();
+        msg.setFromId(111);
+        msg.setToId(112);
+        msg.setConversationId(111 + "_" + 112);
+        msg.setContent("私信测试");
+        msg.setStatus(1);
+        msg.setCreateTime(new Date());
+        messageMapper.insertMessage(msg);
+    }
+
+    @Test
+    public void testUpdateStatus(){
+        List<Integer> list = new ArrayList<>();
+        list.add(355);
+        messageMapper.updateStatus(list,1);
     }
 
 }
