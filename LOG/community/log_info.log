@@ -1,863 +1,100 @@
-2023-03-18 09:53:44,340 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 11796 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 09:53:44,373 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 09:53:44,527 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 09:53:44,528 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 09:53:48,023 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 09:53:48,044 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 09:53:48,046 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 09:53:48,047 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 09:53:48,136 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 09:53:48,140 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 3607 ms
-2023-03-18 09:53:49,729 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 09:53:50,261 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 09:53:50,709 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 09:53:50,736 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 09:53:50,851 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 09:53:50,944 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 8.063 seconds (process running for 13.699)
-2023-03-18 09:53:54,902 INFO [http-nio-8000-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 09:53:54,903 INFO [http-nio-8000-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 09:53:54,906 INFO [http-nio-8000-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
-2023-03-18 09:53:55,005 INFO [http-nio-8000-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 09:53:56,397 INFO [http-nio-8000-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 09:54:21,186 INFO [http-nio-8000-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 09:54:21,236 INFO [http-nio-8000-exec-6] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@584c7c45
-2023-03-18 09:54:21,241 INFO [http-nio-8000-exec-6] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 10:35:14,626 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 4 class path changes (0 additions, 3 deletions, 1 modification)
-2023-03-18 10:35:14,704 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:14,705 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 10:35:14,712 INFO [Thread-5] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 10:35:14,753 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:14,779 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:14,815 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 10:35:14,826 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 10:35:15,112 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 11796 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 10:35:15,113 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 10:35:15,950 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 10:35:15,951 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:15,952 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 10:35:15,954 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 10:35:15,985 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 10:35:15,985 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 867 ms
-2023-03-18 10:35:16,341 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 10:35:16,461 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 10:35:16,548 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 10:35:16,558 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:16,563 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 10:35:16,568 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.589 seconds (process running for 2499.325)
-2023-03-18 10:35:16,572 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 10:35:17,997 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
-2023-03-18 10:35:18,013 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:18,013 INFO [Thread-7] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 10:35:18,015 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:18,017 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:18,134 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 11796 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 10:35:18,134 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 10:35:18,811 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 10:35:18,812 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:18,813 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 10:35:18,813 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 10:35:18,863 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 10:35:18,863 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 725 ms
-2023-03-18 10:35:19,146 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 10:35:19,250 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 10:35:19,325 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 10:35:19,338 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 10:35:19,344 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 10:35:19,349 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.265 seconds (process running for 2502.106)
-2023-03-18 10:35:19,353 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 14:40:17,003 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 41 class path changes (0 additions, 38 deletions, 3 modifications)
-2023-03-18 14:40:17,023 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 14:40:17,025 INFO [Thread-11] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 14:40:17,031 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 14:40:17,033 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 14:40:17,183 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 11796 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 14:40:17,183 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 14:40:17,611 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 14:40:17,612 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 14:40:17,613 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 14:40:17,615 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 14:40:17,650 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 14:40:17,650 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 463 ms
-2023-03-18 14:40:17,743 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 14:40:17,865 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 14:40:17,877 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-03-18 14:40:20,481 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 11796 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 14:40:20,481 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 14:40:21,001 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 14:40:21,005 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 14:40:21,005 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 14:40:21,006 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 14:40:21,031 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 14:40:21,031 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 546 ms
-2023-03-18 14:40:21,198 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 14:40:21,276 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 14:40:21,335 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 14:40:21,345 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 14:40:21,386 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 14:40:21,390 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 0.948 seconds (process running for 17204.152)
-2023-03-18 14:40:21,392 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 14:40:34,824 INFO [http-nio-8000-exec-3] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 14:40:34,825 INFO [http-nio-8000-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 14:40:34,826 INFO [http-nio-8000-exec-3] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 14:40:34,828 INFO [http-nio-8000-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
-2023-03-18 14:40:34,834 INFO [http-nio-8000-exec-3] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12ea2b8
-2023-03-18 14:40:34,835 INFO [http-nio-8000-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
-2023-03-18 14:46:43,066 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:51] Starting MapperTests using Java 19.0.2 with PID 15612 (started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 14:46:43,070 INFO [main] c.n.c.MapperTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 14:46:45,024 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 14:46:45,497 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 14:46:45,730 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:57] Started MapperTests in 3.34 seconds (process running for 4.539)
-2023-03-18 14:46:46,373 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 14:46:46,614 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b4b8199
-2023-03-18 14:46:46,617 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 14:46:46,800 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 14:46:46,809 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 14:48:01,908 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:51] Starting MapperTests using Java 19.0.2 with PID 6168 (started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 14:48:01,911 INFO [main] c.n.c.MapperTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 14:48:03,852 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 14:48:04,276 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 14:48:04,527 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:57] Started MapperTests in 3.35 seconds (process running for 4.468)
-2023-03-18 14:48:05,117 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 14:48:05,370 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f8ac8d5
-2023-03-18 14:48:05,372 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 14:48:05,460 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 14:48:05,471 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 14:50:24,656 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:51] Starting MapperTests using Java 19.0.2 with PID 268 (started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 14:50:24,659 INFO [main] c.n.c.MapperTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 14:50:26,509 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 14:50:26,929 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 14:50:27,162 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:57] Started MapperTests in 3.235 seconds (process running for 4.29)
-2023-03-18 14:50:27,795 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 14:50:28,050 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7b4b8199
-2023-03-18 14:50:28,054 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 14:50:28,180 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 14:50:28,195 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 14:51:08,677 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:51] Starting MapperTests using Java 19.0.2 with PID 9056 (started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 14:51:08,682 INFO [main] c.n.c.MapperTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 14:51:10,667 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 14:51:11,146 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 14:51:11,406 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:57] Started MapperTests in 3.38 seconds (process running for 4.477)
-2023-03-18 14:51:12,068 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 14:51:12,391 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ac4e690
-2023-03-18 14:51:12,394 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 14:51:12,485 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 14:51:12,500 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:15:40,109 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 16272 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:15:40,113 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:15:40,191 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:15:40,191 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:15:42,792 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:15:42,808 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:15:42,811 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:15:42,811 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:15:42,921 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:15:42,924 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2728 ms
-2023-03-18 15:15:43,631 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:15:43,917 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:15:44,160 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:15:44,176 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:15:44,202 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:15:44,216 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 5.031 seconds (process running for 8.307)
-2023-03-18 15:15:53,146 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:15:53,147 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:15:53,150 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 15:15:53,219 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:15:54,699 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:16:14,430 INFO [http-nio-8000-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:16:14,455 INFO [http-nio-8000-exec-3] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1a8e4f5e
-2023-03-18 15:16:14,457 INFO [http-nio-8000-exec-3] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:18:26,495 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2023-03-18 15:18:26,512 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:18:26,513 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 15:18:26,514 INFO [Thread-5] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 15:18:26,519 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:18:26,521 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:18:26,528 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:18:26,531 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:18:26,637 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 16272 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:18:26,638 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:18:27,175 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:18:27,175 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:18:27,176 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:18:27,176 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:18:27,199 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:18:27,199 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 557 ms
-2023-03-18 15:18:27,431 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:18:27,524 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:18:27,588 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:18:27,594 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:18:27,604 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:18:27,609 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.017 seconds (process running for 171.7)
-2023-03-18 15:18:27,612 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 15:18:30,360 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:18:30,360 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:18:30,361 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 15:18:30,363 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
-2023-03-18 15:18:30,369 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21697f3b
-2023-03-18 15:18:30,370 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
-2023-03-18 15:18:42,285 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
-2023-03-18 15:18:42,287 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
-2023-03-18 15:18:45,530 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 5196 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:18:45,533 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:18:45,616 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:18:45,617 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:18:47,456 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:18:47,470 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:18:47,471 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:18:47,472 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:18:47,539 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:18:47,542 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1922 ms
-2023-03-18 15:18:48,090 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:18:48,355 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:18:48,580 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:18:48,594 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:18:48,618 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:18:48,632 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 3.9 seconds (process running for 4.497)
-2023-03-18 15:18:52,497 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:18:52,497 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:18:52,499 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 15:18:52,551 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:18:52,761 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19d16dd5
-2023-03-18 15:18:52,764 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:23:41,479 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 83 class path changes (0 additions, 83 deletions, 0 modifications)
-2023-03-18 15:23:41,513 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:23:41,515 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 15:23:41,519 INFO [Thread-5] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 15:23:41,527 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:23:41,536 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:23:41,551 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:23:41,557 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:23:53,430 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 5196 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:23:53,431 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:23:54,117 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:23:54,118 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:23:54,119 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:23:54,172 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:23:54,173 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 738 ms
-2023-03-18 15:23:54,271 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:23:54,419 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 15:23:54,429 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-03-18 15:23:56,451 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 5196 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:23:56,452 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:23:57,496 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:23:57,497 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:23:57,498 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:23:57,526 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:23:57,526 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1065 ms
-2023-03-18 15:23:57,702 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:23:57,753 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:23:57,797 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:23:57,807 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:23:57,812 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.468 seconds (process running for 313.676)
-2023-03-18 15:23:57,814 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 15:24:08,895 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 5616 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:24:08,899 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:24:08,983 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:24:08,983 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:24:10,765 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:24:10,777 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:24:10,778 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:24:10,779 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:24:10,855 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:24:10,859 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1872 ms
-2023-03-18 15:24:11,484 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:24:11,761 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:24:12,004 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:24:12,021 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:24:12,044 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:24:12,058 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 3.948 seconds (process running for 4.606)
-2023-03-18 15:24:15,726 INFO [http-nio-8000-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:24:15,727 INFO [http-nio-8000-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:24:15,729 INFO [http-nio-8000-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 15:24:15,834 INFO [http-nio-8000-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:24:16,088 INFO [http-nio-8000-exec-2] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@637ec4fd
-2023-03-18 15:24:16,090 INFO [http-nio-8000-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:28:48,284 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:28:48,297 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:28:51,103 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 3960 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:28:51,107 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:28:51,220 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:28:51,221 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:28:53,370 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:28:53,386 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:28:53,388 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:28:53,389 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:28:53,457 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:28:53,462 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2236 ms
-2023-03-18 15:28:54,175 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:28:54,480 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:28:54,742 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:28:54,764 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:28:54,790 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:28:54,807 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 4.634 seconds (process running for 5.623)
-2023-03-18 15:30:26,623 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 3220 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:30:26,628 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:30:26,735 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:30:26,736 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:30:28,679 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:30:28,695 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:30:28,696 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:30:28,696 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:30:28,776 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:30:28,779 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2039 ms
-2023-03-18 15:30:29,461 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:30:29,739 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:30:30,000 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:30:30,016 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:30:30,046 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:30:30,066 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 4.469 seconds (process running for 5.242)
-2023-03-18 15:30:32,815 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:30:32,816 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:30:32,819 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
-2023-03-18 15:30:32,879 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:30:33,085 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@70847fd7
-2023-03-18 15:30:33,088 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:41:29,961 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:41:29,964 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:41:33,987 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 3264 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:41:33,991 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:41:34,073 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:41:34,073 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:41:35,822 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:41:35,835 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:41:35,836 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:41:35,837 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:41:35,910 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:41:35,913 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1836 ms
-2023-03-18 15:41:36,481 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:41:36,745 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:41:37,069 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:41:37,083 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:41:37,107 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:41:37,123 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 4.065 seconds (process running for 4.884)
-2023-03-18 15:41:37,952 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:41:37,953 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:41:37,955 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
-2023-03-18 15:41:38,001 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:41:38,198 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6cd8ed93
-2023-03-18 15:41:38,201 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:46:16,352 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:46:16,357 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:46:22,760 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:51] Starting MapperTests using Java 19.0.2 with PID 13128 (started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:46:22,765 INFO [main] c.n.c.MapperTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:46:25,379 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:51] Starting MapperTests using Java 19.0.2 with PID 12008 (started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:46:25,398 INFO [main] c.n.c.MapperTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:46:26,324 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:46:27,042 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:46:27,469 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:57] Started MapperTests in 5.632 seconds (process running for 7.699)
-2023-03-18 15:46:28,858 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:46:29,124 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:46:29,764 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dae5e0
-2023-03-18 15:46:29,771 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:46:29,924 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:46:29,966 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:46:30,000 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:46:30,338 INFO [main] c.n.c.MapperTests [StartupInfoLogger.java:57] Started MapperTests in 5.971 seconds (process running for 7.897)
-2023-03-18 15:46:31,884 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:46:32,311 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d71e10b
-2023-03-18 15:46:32,315 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:46:32,466 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:46:32,495 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:51:14,683 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:51] Starting SensitiveTests using Java 19.0.2 with PID 11300 (started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:51:14,688 INFO [main] c.n.c.SensitiveTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:51:16,746 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:51:17,149 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:51:17,370 INFO [main] c.n.c.SensitiveTests [StartupInfoLogger.java:57] Started SensitiveTests in 3.511 seconds (process running for 4.807)
-2023-03-18 15:51:17,954 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:51:18,196 INFO [main] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@40b31a16
-2023-03-18 15:51:18,198 INFO [main] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:51:18,293 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:51:18,302 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:52:44,567 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 5812 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:52:44,571 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:52:44,640 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:52:44,641 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:52:46,477 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:52:46,492 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:52:46,493 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:52:46,494 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:52:46,576 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:52:46,579 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1934 ms
-2023-03-18 15:52:47,131 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:52:47,369 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:52:47,593 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:52:47,608 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:52:47,636 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:52:47,650 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 3.876 seconds (process running for 4.573)
-2023-03-18 15:52:54,316 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:52:54,317 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:52:54,318 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 15:52:54,366 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:52:54,553 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e229e99
-2023-03-18 15:52:54,556 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:56:56,980 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:56:56,988 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:57:00,274 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 9844 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:57:00,278 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:57:00,366 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:57:00,366 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:57:02,200 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:57:02,213 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:57:02,216 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:57:02,216 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:57:02,287 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:57:02,290 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1921 ms
-2023-03-18 15:57:02,891 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:57:03,214 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:57:03,540 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:57:03,587 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:57:03,624 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:57:03,645 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 4.151 seconds (process running for 4.793)
-2023-03-18 15:57:22,315 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:57:22,316 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:57:22,318 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
-2023-03-18 15:57:22,387 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:57:22,614 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f19e6dc
-2023-03-18 15:57:22,617 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 15:59:16,977 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 15:59:16,986 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 15:59:20,238 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 17136 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 15:59:20,244 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 15:59:20,356 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 15:59:20,357 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 15:59:22,505 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 15:59:22,520 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:59:22,522 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 15:59:22,522 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 15:59:22,596 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 15:59:22,599 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2239 ms
-2023-03-18 15:59:23,212 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 15:59:23,480 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 15:59:23,722 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 15:59:23,738 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 15:59:23,769 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 15:59:23,781 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 4.35 seconds (process running for 4.976)
-2023-03-18 15:59:26,145 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 15:59:26,146 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 15:59:26,148 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
-2023-03-18 15:59:26,193 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 15:59:26,376 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e229e99
-2023-03-18 15:59:26,381 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 16:04:19,682 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-03-18 16:04:19,701 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:04:19,702 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 16:04:19,703 INFO [Thread-5] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 16:04:19,707 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:04:19,710 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:04:19,715 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 16:04:19,718 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 16:04:19,850 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 17136 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 16:04:19,851 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 16:04:20,452 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 16:04:20,454 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:04:20,455 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 16:04:20,455 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 16:04:20,487 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 16:04:20,487 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 632 ms
-2023-03-18 16:04:20,731 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 16:04:20,818 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 16:04:20,886 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 16:04:20,892 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:04:20,898 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 16:04:20,903 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.121 seconds (process running for 302.098)
-2023-03-18 16:04:20,907 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 16:04:26,981 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 16:04:26,982 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 16:04:26,982 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 0 ms
-2023-03-18 16:04:26,984 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
-2023-03-18 16:04:26,990 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@166e2ebe
-2023-03-18 16:04:26,991 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
-2023-03-18 16:10:05,076 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2023-03-18 16:10:05,094 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:05,094 INFO [Thread-7] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 16:10:05,095 INFO [Thread-7] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 16:10:05,099 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:05,101 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:05,104 INFO [Thread-7] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
-2023-03-18 16:10:05,108 INFO [Thread-7] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
-2023-03-18 16:10:05,266 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 17136 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 16:10:05,267 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 16:10:05,861 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 16:10:05,862 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:05,863 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 16:10:05,864 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 16:10:05,908 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 16:10:05,908 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 638 ms
-2023-03-18 16:10:06,272 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 16:10:06,389 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 16:10:06,485 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 16:10:06,492 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:06,503 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 16:10:06,509 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.309 seconds (process running for 647.705)
-2023-03-18 16:10:06,512 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 16:10:07,969 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2023-03-18 16:10:07,986 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:07,987 INFO [Thread-11] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 16:10:07,989 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:07,990 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:08,102 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 17136 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 16:10:08,103 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 16:10:08,623 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 16:10:08,624 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:08,625 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 16:10:08,625 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 16:10:08,656 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 16:10:08,656 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 549 ms
-2023-03-18 16:10:08,805 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 16:10:08,861 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 16:10:08,903 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 16:10:08,908 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:10:08,912 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 16:10:08,916 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 0.862 seconds (process running for 650.111)
-2023-03-18 16:10:08,917 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 16:10:11,530 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 16:10:11,530 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 16:10:11,531 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 16:10:11,532 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-3 - Starting...
-2023-03-18 16:10:11,538 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6ba88911
-2023-03-18 16:10:11,538 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-3 - Start completed.
-2023-03-18 16:31:57,405 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-3 - Shutdown initiated...
-2023-03-18 16:31:57,407 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-3 - Shutdown completed.
-2023-03-18 16:32:03,015 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 12976 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 16:32:03,019 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 16:32:03,121 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 16:32:03,122 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 16:32:05,620 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 16:32:05,632 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:32:05,633 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 16:32:05,634 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 16:32:05,708 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 16:32:05,711 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2585 ms
-2023-03-18 16:32:06,451 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 16:32:06,802 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 16:32:07,054 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 16:32:07,071 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:32:07,101 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 16:32:07,115 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 5.063 seconds (process running for 5.798)
-2023-03-18 16:32:16,569 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 16:32:16,569 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 16:32:16,571 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 16:32:16,619 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 16:32:16,863 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@12153e43
-2023-03-18 16:32:16,867 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 16:37:36,095 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 16:37:36,098 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 16:37:38,223 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 14920 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 16:37:38,227 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 16:37:38,292 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 16:37:38,293 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 16:37:39,912 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 16:37:39,925 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:37:39,927 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 16:37:39,927 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 16:37:39,995 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 16:37:39,997 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1701 ms
-2023-03-18 16:37:40,561 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 16:37:40,810 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 16:37:41,031 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 16:37:41,049 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:37:41,084 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 16:37:41,100 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 3.68 seconds (process running for 4.231)
-2023-03-18 16:37:44,075 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 16:37:44,076 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 16:37:44,077 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 16:37:44,136 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 16:37:44,315 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7e8838b3
-2023-03-18 16:37:44,318 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 16:39:09,909 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2023-03-18 16:39:09,940 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:09,941 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 16:39:09,944 INFO [Thread-5] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 16:39:09,952 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:09,955 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:09,961 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 16:39:09,966 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 16:39:10,149 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 14920 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 16:39:10,150 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 16:39:11,219 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 16:39:11,221 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:11,222 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 16:39:11,226 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 16:39:11,269 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 16:39:11,269 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 1114 ms
-2023-03-18 16:39:11,596 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 16:39:11,684 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 16:39:11,750 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 16:39:11,757 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:11,761 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 16:39:11,766 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.709 seconds (process running for 94.898)
-2023-03-18 16:39:11,769 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 16:39:13,219 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2023-03-18 16:39:13,241 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:13,241 INFO [Thread-7] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 16:39:13,245 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:13,246 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:13,366 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 14920 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 16:39:13,367 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 16:39:13,856 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 16:39:13,857 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:13,857 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 16:39:13,857 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 16:39:13,881 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 16:39:13,882 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 511 ms
-2023-03-18 16:39:14,060 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 16:39:14,136 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 16:39:14,183 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 16:39:14,189 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 16:39:14,198 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 16:39:14,202 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 0.893 seconds (process running for 97.334)
-2023-03-18 16:39:14,203 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 16:39:17,020 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 16:39:17,021 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 16:39:17,021 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 0 ms
-2023-03-18 16:39:17,023 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
-2023-03-18 16:39:17,029 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@8e9f09d
-2023-03-18 16:39:17,030 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
-2023-03-18 17:19:29,925 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 2 class path changes (0 additions, 2 deletions, 0 modifications)
-2023-03-18 17:19:29,955 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:29,955 INFO [Thread-11] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 17:19:29,956 INFO [Thread-11] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 17:19:29,961 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:29,963 INFO [Thread-11] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:29,965 INFO [Thread-11] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-2 - Shutdown initiated...
-2023-03-18 17:19:29,969 INFO [Thread-11] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-2 - Shutdown completed.
-2023-03-18 17:19:30,122 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 14920 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 17:19:30,123 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 17:19:30,793 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 17:19:30,794 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:30,795 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 17:19:30,796 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 17:19:30,844 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 17:19:30,845 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 719 ms
-2023-03-18 17:19:31,088 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 17:19:31,167 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 17:19:31,227 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 17:19:31,233 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:31,239 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 17:19:31,246 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.188 seconds (process running for 2514.377)
-2023-03-18 17:19:31,248 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 17:19:33,114 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
-2023-03-18 17:19:33,129 INFO [Thread-15] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:33,130 INFO [Thread-15] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 17:19:33,132 INFO [Thread-15] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:33,133 INFO [Thread-15] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:33,250 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 14920 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 17:19:33,252 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 17:19:33,668 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 17:19:33,672 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:33,673 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 17:19:33,673 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 17:19:33,709 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 17:19:33,710 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 454 ms
-2023-03-18 17:19:33,849 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
-2023-03-18 17:19:33,881 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 17:19:33,978 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 17:19:34,027 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 17:19:34,031 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:19:34,037 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 17:19:34,042 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 0.837 seconds (process running for 2517.173)
-2023-03-18 17:19:34,044 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 17:19:34,115 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 17:19:34,115 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 17:19:34,117 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 17:19:34,124 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-3 - Starting...
-2023-03-18 17:19:34,133 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fb9741d
-2023-03-18 17:19:34,134 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-3 - Start completed.
-2023-03-18 17:20:30,191 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2023-03-18 17:20:30,210 INFO [Thread-19] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:30,211 INFO [Thread-19] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 17:20:30,212 INFO [Thread-19] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 17:20:30,215 INFO [Thread-19] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:30,217 INFO [Thread-19] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:30,218 INFO [Thread-19] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-3 - Shutdown initiated...
-2023-03-18 17:20:30,220 INFO [Thread-19] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-3 - Shutdown completed.
-2023-03-18 17:20:30,330 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 14920 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 17:20:30,331 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 17:20:30,673 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 17:20:30,674 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:30,674 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 17:20:30,675 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 17:20:30,702 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 17:20:30,703 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 368 ms
-2023-03-18 17:20:30,823 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
-2023-03-18 17:20:30,853 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 17:20:30,912 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 17:20:30,965 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 17:20:30,973 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:30,979 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 17:20:30,983 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 0.695 seconds (process running for 2574.114)
-2023-03-18 17:20:30,985 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 17:20:32,405 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
-2023-03-18 17:20:32,423 INFO [Thread-23] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:32,423 INFO [Thread-23] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 17:20:32,426 INFO [Thread-23] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:32,428 INFO [Thread-23] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:32,541 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 14920 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 17:20:32,542 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 17:20:32,875 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 17:20:32,876 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:32,876 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 17:20:32,876 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 17:20:32,900 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 17:20:32,900 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 355 ms
-2023-03-18 17:20:33,023 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
-2023-03-18 17:20:33,051 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 17:20:33,109 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 17:20:33,157 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 17:20:33,162 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:20:33,167 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 17:20:33,170 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 0.674 seconds (process running for 2576.302)
-2023-03-18 17:20:33,172 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 17:20:34,333 INFO [http-nio-8000-exec-2] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 17:20:34,333 INFO [http-nio-8000-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 17:20:34,333 INFO [http-nio-8000-exec-2] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 0 ms
-2023-03-18 17:20:34,335 INFO [http-nio-8000-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-4 - Starting...
-2023-03-18 17:20:34,340 INFO [http-nio-8000-exec-2] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@29f9ce8b
-2023-03-18 17:20:34,340 INFO [http-nio-8000-exec-2] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-4 - Start completed.
-2023-03-18 17:21:37,012 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-4 - Shutdown initiated...
-2023-03-18 17:21:37,014 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-4 - Shutdown completed.
-2023-03-18 17:21:42,611 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 3676 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 17:21:42,615 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 17:21:42,717 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 17:21:42,718 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 17:21:44,761 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 17:21:44,781 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:21:44,783 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 17:21:44,785 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 17:21:44,879 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 17:21:44,883 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2160 ms
-2023-03-18 17:21:45,593 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
-2023-03-18 17:21:45,688 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 17:21:46,043 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 17:21:46,526 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 17:21:46,551 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 17:21:46,589 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 17:21:46,612 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 4.821 seconds (process running for 5.446)
-2023-03-18 17:21:47,750 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 17:21:47,752 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 17:21:47,755 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 3 ms
-2023-03-18 17:21:47,801 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 17:21:48,004 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@db0abe3
-2023-03-18 17:21:48,008 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 18:21:07,255 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 18:21:07,258 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 18:21:16,320 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 4036 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 18:21:16,324 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 18:21:16,419 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-03-18 18:21:16,420 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-03-18 18:21:19,239 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 18:21:19,257 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:21:19,259 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 18:21:19,259 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 18:21:19,353 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 18:21:19,359 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2933 ms
-2023-03-18 18:21:20,178 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
-2023-03-18 18:21:20,304 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 18:21:21,035 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 18:21:21,593 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 18:21:21,617 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:21:21,647 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 18:21:21,664 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 6.31 seconds (process running for 7.039)
-2023-03-18 18:21:30,815 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 18:21:30,816 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 18:21:30,820 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 2 ms
-2023-03-18 18:21:30,888 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
-2023-03-18 18:21:31,133 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@548ad9a7
-2023-03-18 18:21:31,135 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
-2023-03-18 18:32:34,808 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
-2023-03-18 18:32:34,837 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:34,837 INFO [Thread-5] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 18:32:34,838 INFO [Thread-5] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-03-18 18:32:34,843 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:34,846 INFO [Thread-5] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:34,855 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-1 - Shutdown initiated...
-2023-03-18 18:32:34,860 INFO [Thread-5] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-1 - Shutdown completed.
-2023-03-18 18:32:35,044 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 4036 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 18:32:35,046 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 18:32:35,746 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 18:32:35,748 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:35,749 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 18:32:35,749 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 18:32:35,792 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 18:32:35,793 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 728 ms
-2023-03-18 18:32:36,065 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
-2023-03-18 18:32:36,135 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 18:32:36,241 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 18:32:36,320 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 18:32:36,327 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:36,334 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 18:32:36,339 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.381 seconds (process running for 681.714)
-2023-03-18 18:32:36,343 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 18:32:38,827 INFO [File Watcher] o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [LocalDevToolsAutoConfiguration.java:211] Restarting due to 2 class path changes (2 additions, 0 deletions, 0 modifications)
-2023-03-18 18:32:38,849 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Pausing ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:38,850 INFO [Thread-7] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
-2023-03-18 18:32:38,854 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Stopping ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:38,856 INFO [Thread-7] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Destroying ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:39,007 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 4036 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
-2023-03-18 18:32:39,008 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
-2023-03-18 18:32:39,677 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
-2023-03-18 18:32:39,678 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:39,680 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
-2023-03-18 18:32:39,681 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-03-18 18:32:39,720 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
-2023-03-18 18:32:39,721 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 707 ms
-2023-03-18 18:32:39,739 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
-2023-03-18 18:32:40,093 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
-2023-03-18 18:32:40,171 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
-2023-03-18 18:32:40,380 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
-2023-03-18 18:32:40,643 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
-2023-03-18 18:32:40,654 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
-2023-03-18 18:32:40,661 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
-2023-03-18 18:32:40,670 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 1.726 seconds (process running for 686.045)
-2023-03-18 18:32:40,672 INFO [restartedMain] o.s.b.d.a.ConditionEvaluationDeltaLoggingListener [ConditionEvaluationDeltaLoggingListener.java:63] Condition evaluation unchanged
-2023-03-18 18:32:52,329 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-03-18 18:32:52,329 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
-2023-03-18 18:32:52,331 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
-2023-03-18 18:32:52,337 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findLoginTicket].
-2023-03-18 18:32:52,338 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-2 - Starting...
-2023-03-18 18:32:52,345 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ecf140c
-2023-03-18 18:32:52,345 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-2 - Start completed.
-2023-03-18 18:32:52,349 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,354 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostsRows].
-2023-03-18 18:32:52,358 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
-2023-03-18 18:32:52,368 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,372 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,374 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,379 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,383 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,386 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,389 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,391 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,394 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:32:52,399 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[0:0:0:0:0:0:0:1]，在[2023-03-18 18:32:52]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,945 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostsRows].
-2023-03-18 18:33:32,949 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
-2023-03-18 18:33:32,955 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,960 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,963 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,965 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,968 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,971 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,977 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,982 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,986 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:33:32,992 INFO [http-nio-8000-exec-6] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:33:32]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,310 INFO [http-nio-8000-exec-3] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.login].
-2023-03-18 18:34:04,360 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findLoginTicket].
-2023-03-18 18:34:04,364 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,368 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostsRows].
-2023-03-18 18:34:04,373 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
-2023-03-18 18:34:04,379 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,383 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,389 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,393 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,397 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,400 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,404 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,407 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,410 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
-2023-03-18 18:34:04,412 INFO [http-nio-8000-exec-4] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:40] 用户[127.0.0.1]，在[2023-03-18 18:34:04]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-19 14:38:35,313 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 7192 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 14:38:35,326 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 14:38:36,980 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 14:38:36,985 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 14:38:37,040 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 22 ms. Found 0 Redis repository interfaces.
+2023-03-19 14:38:38,114 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 14:38:39,100 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 14:38:39,189 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 14:38:40,858 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 14:38:41,420 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 7.18 seconds (process running for 9.155)
+2023-03-19 14:41:07,417 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 1748 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 14:41:07,421 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 14:41:08,467 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 14:41:08,475 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 14:41:08,529 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2023-03-19 14:41:09,280 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 14:41:09,950 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 14:41:10,017 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 14:41:11,155 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 14:41:11,607 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 4.976 seconds (process running for 6.066)
+2023-03-19 14:46:07,024 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 16004 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 14:46:07,029 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 14:46:08,306 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 14:46:08,312 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 14:46:08,381 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 26 ms. Found 0 Redis repository interfaces.
+2023-03-19 14:46:09,211 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 14:46:09,892 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 14:46:09,988 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 14:46:11,372 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 14:46:11,957 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 5.77 seconds (process running for 7.203)
+2023-03-19 15:35:08,357 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 17212 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 15:35:08,362 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 15:35:09,762 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 15:35:09,769 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 15:35:09,822 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-03-19 15:35:10,664 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 15:35:11,375 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 15:35:11,475 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 15:35:12,906 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 15:35:13,503 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 6.042 seconds (process running for 7.533)
+2023-03-19 15:38:55,795 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 9668 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 15:38:55,802 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 15:38:57,079 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 15:38:57,086 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 15:38:57,148 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 25 ms. Found 0 Redis repository interfaces.
+2023-03-19 15:38:57,897 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 15:38:58,679 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 15:38:58,777 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 15:39:00,174 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 15:39:00,747 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 5.819 seconds (process running for 7.347)
+2023-03-19 15:41:47,768 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 16132 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 15:41:47,772 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 15:41:49,283 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 15:41:49,291 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 15:41:49,341 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2023-03-19 15:41:50,144 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 15:41:50,854 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 15:41:50,952 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 15:41:52,526 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 15:41:53,117 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 6.305 seconds (process running for 7.775)
+2023-03-19 15:42:27,712 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 17976 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 15:42:27,717 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 15:42:28,932 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 15:42:28,937 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 15:42:28,981 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-03-19 15:42:29,805 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 15:42:30,717 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 15:42:30,806 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 15:42:32,227 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 15:42:32,791 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 5.944 seconds (process running for 7.817)
+2023-03-19 15:45:31,702 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 3980 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 15:45:31,707 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 15:45:33,121 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 15:45:33,127 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 15:45:33,182 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2023-03-19 15:45:34,023 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 15:45:34,723 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 15:45:34,821 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 15:45:36,187 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 15:45:36,842 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 6.055 seconds (process running for 7.42)
+2023-03-19 16:36:53,932 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 6356 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 16:36:53,938 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 16:36:55,219 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 16:36:55,224 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 16:36:55,275 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2023-03-19 16:36:56,117 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 16:36:56,830 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 16:36:56,934 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 16:36:58,239 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 16:36:58,793 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 5.714 seconds (process running for 7.265)
+2023-03-19 16:38:18,471 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:51] Starting RedisTests using Java 19.0.2 with PID 17432 (started by wangz in D:\Files\Java_workpath\community)
+2023-03-19 16:38:18,474 INFO [main] c.n.c.RedisTests [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-19 16:38:19,482 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 16:38:19,487 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 16:38:19,534 INFO [main] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 21 ms. Found 0 Redis repository interfaces.
+2023-03-19 16:38:20,225 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-19 16:38:20,801 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.controller.advice.ExceptionAdvice.logger
+2023-03-19 16:38:20,879 INFO [main] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:575] Autowired annotation should only be used on methods with parameters: public java.lang.String com.nowcoder.community.controller.UserController.getSettingPage()
+2023-03-19 16:38:21,972 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-19 16:38:22,437 INFO [main] c.n.c.RedisTests [StartupInfoLogger.java:57] Started RedisTests in 4.558 seconds (process running for 5.636)
