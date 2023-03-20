@@ -39,7 +39,7 @@ public class CommentService implements CommunityConstant {
     //            2）编程方式，详细控制整个事务
     @Transactional(isolation = Isolation.READ_COMMITTED, propagation = Propagation.REQUIRED)
     public int addComment(Comment comment){
-        if(comment.getContent() != null){
+        if(comment.getContent() == null){
             throw new IllegalArgumentException("参数不能为空");
         }
         //添加评论
