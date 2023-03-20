@@ -23,9 +23,9 @@ public class LikeController {
     @Autowired
     private HostHolder hostHolder;
 
+    @LoginRequired
     @RequestMapping(path = "/like", method = RequestMethod.POST)
     @ResponseBody
-    @LoginRequired
     public String like(int entityType, int entityId, int entityUserId){
         User user = hostHolder.getUser();
 
