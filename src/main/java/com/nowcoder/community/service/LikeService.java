@@ -30,10 +30,10 @@ public class LikeService {
 
                 operations.multi(); // 开启事务
                 
-                if(isMember){
+                if(isMember){ // 如果已经点过赞，再点取消
                     operations.opsForSet().remove(entityLikeKey, userId);
                     operations.opsForValue().decrement(userLikeKey);
-                }else{
+                }else{ // 如果没有，再点点赞
                     operations.opsForSet().add(entityLikeKey, userId);
                     operations.opsForValue().increment(userLikeKey);
                 }

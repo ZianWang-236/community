@@ -32,4 +32,12 @@ public interface CommunityConstant {
      *  用户实体类型
      */
      int ENTITY_TYPE_USER=3;
+    /**
+     * Redis key generate constant
+     */
+    String SPLIT = ":";
+    String PREFIX_ENTITY_LIKE = "like:entity";
+    String PREFIX_USER_LIKE ="like:user";
+    String PREFIX_FOLLOWEE ="followee";
+    String PREFIX_FOLLOWER ="follower";
 }
