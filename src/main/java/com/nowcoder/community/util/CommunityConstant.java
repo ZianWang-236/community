@@ -40,4 +40,7 @@ public interface CommunityConstant {
     String PREFIX_USER_LIKE ="like:user";
     String PREFIX_FOLLOWEE ="followee";
     String PREFIX_FOLLOWER ="follower";
+    String PREFIX_KAPTCHA ="kaptcha";
+    String PREFIX_TICKET ="ticket";
+    String PREFIX_USER ="user";
 }

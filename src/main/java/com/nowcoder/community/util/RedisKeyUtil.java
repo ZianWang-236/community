@@ -47,4 +47,26 @@ public class RedisKeyUtil implements CommunityConstant{
     public static String getFollowerKey(int entityType, int entityId){
         return PREFIX_FOLLOWER + SPLIT + entityType + SPLIT + entityId;
     }
+
+    /**
+     * 验证码
+     */
+    public static String getKaptchaKey(String owner){
+        return PREFIX_KAPTCHA + SPLIT + owner;
+    }
+
+    /**
+     * 登录凭证
+     */
+    public static String getTicketKey(String ticket){
+        return PREFIX_TICKET + SPLIT + ticket;
+    }
+
+    /**
+     * 用户
+     */
+    public static String getUserKey(int userId){
+        return PREFIX_USER + SPLIT + userId;
+    }
+
 }
