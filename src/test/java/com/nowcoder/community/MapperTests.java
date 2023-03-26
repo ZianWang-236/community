@@ -9,6 +9,7 @@ import com.nowcoder.community.entity.DiscussPost;
 import com.nowcoder.community.entity.LoginTicket;
 import com.nowcoder.community.entity.Message;
 import com.nowcoder.community.entity.User;
+import com.nowcoder.community.service.MessageService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +37,9 @@ public class MapperTests {
 
     @Autowired
     private MessageMapper messageMapper;
+
+    @Autowired
+    private MessageService messageService;
 
     @Test
     public void testSelectUser(){
@@ -176,5 +180,12 @@ public class MapperTests {
         list.add(355);
         messageMapper.updateStatus(list,1);
     }
+
+     @Test
+    public void testGetLatest(){
+         System.out.println(messageService.findLatestNotice(155, "comment"));
+
+         // 不存在返回null
+     }
 
 }
