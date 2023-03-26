@@ -11134,3 +11134,220 @@ Error starting ApplicationContext. To display the condition evaluation report re
 2023-03-26 18:27:33,432 INFO [http-nio-8000-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[127.0.0.1]，在[2023-03-26 18:27:33]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
 2023-03-26 18:27:33,434 INFO [http-nio-8000-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[127.0.0.1]，在[2023-03-26 18:27:33]，访问了[com.nowcoder.community.service.MessageService.findLetterUnreadCount].
 2023-03-26 18:27:33,437 INFO [http-nio-8000-exec-9] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[127.0.0.1]，在[2023-03-26 18:27:33]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
+2023-03-26 18:31:14,662 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:331] [Consumer clientId=consumer-community-consumer-group-3, groupId=community-consumer-group] Revoke previously assigned partitions comment-0, follow-0, like-0
+2023-03-26 18:31:14,662 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] community-consumer-group: partitions revoked: [comment-0, follow-0, like-0]
+2023-03-26 18:31:14,662 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:1124] [Consumer clientId=consumer-community-consumer-group-3, groupId=community-consumer-group] Member consumer-community-consumer-group-3-072d3cae-928f-4ee9-a6c5-85edf9d67d49 sending LeaveGroup request to coordinator ACER:9092 (id: 2147483647 rack: null) due to the consumer unsubscribed from all topics
+2023-03-26 18:31:14,663 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:1016] [Consumer clientId=consumer-community-consumer-group-3, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-03-26 18:31:14,663 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:1063] [Consumer clientId=consumer-community-consumer-group-3, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-03-26 18:31:14,663 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:1082] [Consumer clientId=consumer-community-consumer-group-3, groupId=community-consumer-group] Unsubscribed all topics or patterns and assigned partitions
+2023-03-26 18:31:14,663 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:1016] [Consumer clientId=consumer-community-consumer-group-3, groupId=community-consumer-group] Resetting generation and member id due to: consumer pro-actively leaving the group
+2023-03-26 18:31:14,663 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:1063] [Consumer clientId=consumer-community-consumer-group-3, groupId=community-consumer-group] Request joining group due to: consumer pro-actively leaving the group
+2023-03-26 18:31:14,667 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.m.Metrics [Metrics.java:693] Metrics scheduler closed
+2023-03-26 18:31:14,667 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.m.Metrics [Metrics.java:697] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2023-03-26 18:31:14,667 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.m.Metrics [Metrics.java:703] Metrics reporters closed
+2023-03-26 18:31:14,668 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.u.AppInfoParser [AppInfoParser.java:83] App info kafka.consumer for consumer-community-consumer-group-3 unregistered
+2023-03-26 18:31:14,669 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] community-consumer-group: Consumer stopped
+2023-03-26 18:31:14,702 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:350] HikariPool-3 - Shutdown initiated...
+2023-03-26 18:31:14,703 INFO [SpringApplicationShutdownHook] c.z.h.HikariDataSource [HikariDataSource.java:352] HikariPool-3 - Shutdown completed.
+2023-03-26 18:31:19,355 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 13412 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
+2023-03-26 18:31:19,361 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-26 18:31:19,508 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-26 18:31:19,509 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-26 18:31:20,604 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-26 18:31:20,608 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-26 18:31:20,665 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 32 ms. Found 0 Redis repository interfaces.
+2023-03-26 18:31:22,535 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8080 (http)
+2023-03-26 18:31:22,550 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-26 18:31:22,552 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-03-26 18:31:22,553 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-26 18:31:22,650 INFO [restartedMain] o.a.c.c.C.[.[.[/] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-03-26 18:31:22,653 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 3141 ms
+2023-03-26 18:31:22,760 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-26 18:31:23,550 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Stopping service [Tomcat]
+2023-03-26 18:31:23,579 INFO [restartedMain] o.s.b.a.l.ConditionEvaluationReportLogger [ConditionEvaluationReportLogger.java:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-03-26 18:33:23,213 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:51] Starting CommunityApplication using Java 19.0.2 with PID 12768 (D:\Files\Java_workpath\community\target\classes started by wangz in D:\Files\Java_workpath\community)
+2023-03-26 18:33:23,217 INFO [restartedMain] c.n.c.CommunityApplication [SpringApplication.java:632] No active profile set, falling back to 1 default profile: "default"
+2023-03-26 18:33:23,301 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-26 18:33:23,301 INFO [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor [DeferredLog.java:250] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-26 18:33:24,365 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:291] Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-26 18:33:24,370 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:138] Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-26 18:33:24,404 INFO [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate [RepositoryConfigurationDelegate.java:208] Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2023-03-26 18:33:25,693 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:108] Tomcat initialized with port(s): 8000 (http)
+2023-03-26 18:33:25,706 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Initializing ProtocolHandler ["http-nio-8000"]
+2023-03-26 18:33:25,707 INFO [restartedMain] o.a.c.c.StandardService [DirectJDKLog.java:173] Starting service [Tomcat]
+2023-03-26 18:33:25,707 INFO [restartedMain] o.a.c.c.StandardEngine [DirectJDKLog.java:173] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-03-26 18:33:25,784 INFO [restartedMain] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring embedded WebApplicationContext
+2023-03-26 18:33:25,786 INFO [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext [ServletWebServerApplicationContext.java:291] Root WebApplicationContext: initialization completed in 2482 ms
+2023-03-26 18:33:25,856 INFO [restartedMain] o.s.b.f.a.AutowiredAnnotationBeanPostProcessor [AutowiredAnnotationBeanPostProcessor.java:551] Autowired annotation is not supported on static fields: private static final org.slf4j.Logger com.nowcoder.community.aspect.ServiceLogAspect.logger
+2023-03-26 18:33:27,373 INFO [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:56] Adding welcome page template: index
+2023-03-26 18:33:27,896 INFO [restartedMain] o.s.b.d.a.OptionalLiveReloadServer [OptionalLiveReloadServer.java:59] LiveReload server is running on port 35729
+2023-03-26 18:33:27,980 INFO [restartedMain] o.a.c.h.Http11NioProtocol [DirectJDKLog.java:173] Starting ProtocolHandler ["http-nio-8000"]
+2023-03-26 18:33:28,013 INFO [restartedMain] o.s.b.w.e.t.TomcatWebServer [TomcatWebServer.java:220] Tomcat started on port(s): 8000 (http) with context path '/community'
+2023-03-26 18:33:28,068 INFO [restartedMain] o.a.k.c.c.ConsumerConfig [AbstractConfig.java:376] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 3000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-community-consumer-group-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = community-consumer-group
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2023-03-26 18:33:28,321 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:119] Kafka version: 3.3.2
+2023-03-26 18:33:28,322 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:120] Kafka commitId: b66af662e61082cb
+2023-03-26 18:33:28,323 INFO [restartedMain] o.a.k.c.u.AppInfoParser [AppInfoParser.java:121] Kafka startTimeMs: 1679870008319
+2023-03-26 18:33:28,327 INFO [restartedMain] o.a.k.c.c.KafkaConsumer [KafkaConsumer.java:973] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Subscribed to topic(s): comment, like, follow
+2023-03-26 18:33:28,351 INFO [restartedMain] c.n.c.CommunityApplication [StartupInfoLogger.java:57] Started CommunityApplication in 5.939 seconds (process running for 6.6)
+2023-03-26 18:33:28,764 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:402] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition like-0 to 0 since the associated topicId changed from null to 252LAVvBRzOLVop4MaK9AQ
+2023-03-26 18:33:28,766 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:402] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition comment-0 to 0 since the associated topicId changed from null to g3Qw4b4PSLiTWDS7eBn0og
+2023-03-26 18:33:28,766 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:402] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Resetting the last seen epoch of partition follow-0 to 0 since the associated topicId changed from null to 1VVuOeXZQF6aUj5ZbLy7cg
+2023-03-26 18:33:28,769 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.Metadata [Metadata.java:287] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Cluster ID: oz5RsD_8R4KLjahQLNTBDg
+2023-03-26 18:33:28,771 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:897] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Discovered group coordinator ACER:9092 (id: 2147483647 rack: null)
+2023-03-26 18:33:28,779 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:566] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2023-03-26 18:33:28,793 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:1063] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: need to re-join with the given member-id: consumer-community-consumer-group-1-d6dd9c59-f883-4b2e-8e0e-12bb9e4622ef
+2023-03-26 18:33:28,794 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:1063] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Request joining group due to: rebalance failed due to 'The group member needs to have a valid member id before actually entering a consumer group.' (MemberIdRequiredException)
+2023-03-26 18:33:28,794 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:566] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] (Re-)joining group
+2023-03-26 18:33:28,797 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:627] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully joined group with generation Generation{generationId=74, memberId='consumer-community-consumer-group-1-d6dd9c59-f883-4b2e-8e0e-12bb9e4622ef', protocol='range'}
+2023-03-26 18:33:28,800 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:705] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Finished assignment for group at generation 74: {consumer-community-consumer-group-1-d6dd9c59-f883-4b2e-8e0e-12bb9e4622ef=Assignment(partitions=[like-0, comment-0, follow-0])}
+2023-03-26 18:33:28,806 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [AbstractCoordinator.java:802] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Successfully synced group in generation Generation{generationId=74, memberId='consumer-community-consumer-group-1-d6dd9c59-f883-4b2e-8e0e-12bb9e4622ef', protocol='range'}
+2023-03-26 18:33:28,806 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:300] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Notifying assignor about the new Assignment(partitions=[like-0, comment-0, follow-0])
+2023-03-26 18:33:28,809 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:312] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Adding newly assigned partitions: comment-0, follow-0, like-0
+2023-03-26 18:33:28,822 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:968] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition comment-0 to the committed offset FetchPosition{offset=5, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[ACER:9092 (id: 0 rack: null)], epoch=0}}
+2023-03-26 18:33:28,822 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:968] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition like-0 to the committed offset FetchPosition{offset=10, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[ACER:9092 (id: 0 rack: null)], epoch=0}}
+2023-03-26 18:33:28,823 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.i.ConsumerCoordinator [ConsumerCoordinator.java:968] [Consumer clientId=consumer-community-consumer-group-1, groupId=community-consumer-group] Setting offset for partition follow-0 to the committed offset FetchPosition{offset=4, offsetEpoch=Optional[0], currentLeader=LeaderAndEpoch{leader=Optional[ACER:9092 (id: 0 rack: null)], epoch=0}}
+2023-03-26 18:33:28,836 INFO [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer [LogAccessor.java:292] community-consumer-group: partitions assigned: [comment-0, follow-0, like-0]
+2023-03-26 18:33:40,002 INFO [http-nio-8000-exec-1] o.a.c.c.C.[.[.[/community] [DirectJDKLog.java:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-26 18:33:40,003 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:532] Initializing Servlet 'dispatcherServlet'
+2023-03-26 18:33:40,005 INFO [http-nio-8000-exec-1] o.s.w.s.DispatcherServlet [FrameworkServlet.java:554] Completed initialization in 1 ms
+2023-03-26 18:33:40,046 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:40]，访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2023-03-26 18:33:40,671 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:40]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:40,687 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:40]，访问了[com.nowcoder.community.service.MessageService.findLatestNotice].
+2023-03-26 18:33:40,704 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:110] HikariPool-1 - Starting...
+2023-03-26 18:33:40,894 INFO [http-nio-8000-exec-1] c.z.h.p.HikariPool [HikariPool.java:565] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1bbe3529
+2023-03-26 18:33:40,897 INFO [http-nio-8000-exec-1] c.z.h.HikariDataSource [HikariDataSource.java:123] HikariPool-1 - Start completed.
+2023-03-26 18:33:41,073 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:41,076 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeCount].
+2023-03-26 18:33:41,083 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
+2023-03-26 18:33:41,111 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findLatestNotice].
+2023-03-26 18:33:41,117 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:41,122 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeCount].
+2023-03-26 18:33:41,126 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
+2023-03-26 18:33:41,132 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findLatestNotice].
+2023-03-26 18:33:41,138 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:41,140 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeCount].
+2023-03-26 18:33:41,146 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
+2023-03-26 18:33:41,151 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findLetterUnreadCount].
+2023-03-26 18:33:41,155 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
+2023-03-26 18:33:41,166 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findLetterUnreadCount].
+2023-03-26 18:33:41,170 INFO [http-nio-8000-exec-1] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:41]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
+2023-03-26 18:33:44,369 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findLoginTicket].
+2023-03-26 18:33:44,371 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,381 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPostsRows].
+2023-03-26 18:33:44,387 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.DiscussPostService.findDiscussPosts].
+2023-03-26 18:33:44,402 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,411 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,414 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,416 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,417 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,419 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,421 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,423 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,425 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,427 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,429 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,432 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,433 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,436 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,438 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,440 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,441 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,444 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,446 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.UserService.findUserById].
+2023-03-26 18:33:44,447 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.LikeService.findEntityLikeCount].
+2023-03-26 18:33:44,449 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.MessageService.findLetterUnreadCount].
+2023-03-26 18:33:44,453 INFO [http-nio-8000-exec-5] c.n.c.a.ServiceLogAspect [ServiceLogAspect.java:43] 用户[0:0:0:0:0:0:0:1]，在[2023-03-26 18:33:44]，访问了[com.nowcoder.community.service.MessageService.findNoticeUnreadCount].
